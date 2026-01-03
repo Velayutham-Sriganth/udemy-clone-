@@ -17,7 +17,11 @@ body{
     display: flex;
     justify-content: space-between;
     border-bottom: solid black 1px;
-    gap:10px
+    gap:10px;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 1;
 }
 
 
@@ -40,6 +44,7 @@ body{
     display:flex;
     gap:10px;
     align-items: center;
+    
 }
 
 .navbar__s2 input
@@ -67,6 +72,30 @@ body{
       font-display: 20px;
 }
 
+.navbar__s3-mylearning
+{
+cursor: pointer; ;
+position: relative;
+}
+
+.navbar__s3-popup
+{
+border:solid black 2px;
+background-color: white;
+width: 100px;
+position: absolute;
+padding: 10px;
+top: 30px;
+left: 1px;
+display: none;
+text-align: center;
+}
+
+.navbar__s3-mylearning:hover .navbar__s3-popup
+{
+display: block;
+}
+
 .categories
 {
     border-bottom: solid black 1px;
@@ -88,6 +117,17 @@ body{
  justify-content: center;
    flex-wrap: wrap;
  align-items: center;
+ position: relative;
+}
+
+.image__discount
+{
+    width: 300px;
+    background-color: aliceblue;
+    position: absolute;
+    top:100px;
+    left:300px;
+    padding:10px;
 }
 
 .recomanded
